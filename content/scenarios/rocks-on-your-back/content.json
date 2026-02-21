@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "type": "narrative",
+      "content": "<p>Two travellers set out on the same mountain road at dawn. They didn't know each other, but they walked the same path, carried the same nothing, and breathed the same thin air.</p><p>The road was not kind. It never promised to be.</p>"
+    },
+    {
+      "type": "scene",
+      "label": "The First Rock",
+      "content": "<p>A stone flew from the hillside and struck them both — sharp, sudden, unfair. The kind of hit that leaves a bruise you feel for days.</p><p>The first traveller looked at the rock, turned it over in her hands, then set it down on the dirt and kept walking. It hurt. She didn't pretend it didn't. But she left it where it landed.</p><p>The second traveller picked up the rock, examined every edge, and placed it carefully into his pack. <em>I need to remember this,</em> he thought. <em>I need to understand why it hit me.</em></p>"
+    },
+    {
+      "type": "scene",
+      "label": "The Second Rock",
+      "content": "<p>An hour later, another stone. Bigger this time. A boulder dressed as a pebble — the kind that looks small until you try to carry it.</p><p>She flinched, steadied herself, and walked on. Her shoulders ached from the first hit, but her pack was empty.</p><p>He picked it up. His pack was heavier now, but he barely noticed. One rock feels like caution. Two rocks feel like wisdom. He told himself he was being thorough.</p>"
+    },
+    {
+      "type": "scene",
+      "label": "The Third Rock",
+      "content": "<p>By midday, the rocks came faster. Some were thrown by strangers. Some rolled down from nowhere. A few, if he was honest, he walked toward on purpose — just to prove he could take the hit.</p><p>She dodged what she could, absorbed what she couldn't, and kept her hands free.</p><p>He stopped to rest. His pack was full. His knees ached. He watched her walking ahead — lighter, faster, not because she hadn't been hit, but because she hadn't kept the evidence.</p>"
+    },
+    {
+      "type": "reflection",
+      "content": "<p>He called out to her: <em>\"Doesn't it bother you? Don't you want to remember what hurt you?\"</em></p><p>She turned back. <em>\"I remember all of it. I just don't carry all of it.\"</em></p><p>There is a difference between remembering pain and wearing it. Between learning from a wound and reopening it every morning to make sure it still bleeds. The rocks will come. They come for everyone. The road doesn't discriminate.</p>"
+    },
+    {
+      "type": "takeaway",
+      "content": "<p>The weight you carry is a choice you make every single morning. You can hold every rock that ever hit you — catalogue them, name them, build a museum of your suffering — or you can set them down and walk.</p><p>Letting go is not forgetting. It's deciding that your back matters more than your archive.</p>"
+    }
+  ]
+}

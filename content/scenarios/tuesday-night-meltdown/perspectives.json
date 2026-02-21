@@ -1,0 +1,18 @@
+{
+  "fixer": {
+    "title": "The Architect of Solutions",
+    "subtitle": "Why I handed you a wrench when you were crying.",
+    "color": "blue",
+    "content": "<p>I saw you drowning. That is what it felt like to me. You walked through the door, shoulders slumped, carrying the weight of that same argument with your boss.</p><p>My chest tightened. I love you, and I hate seeing you in pain. My brain immediately went into override. <em>Analyze. Diagnose. Solve.</em></p><p>\"Did you send the email I suggested last time?\" I asked. It wasn't an accusation; it was a diagnostics check. I was trying to find the lever to pull to stop the pain.</p><p>When you pulled away and said, \"You never listen,\" I felt paralyzed. I <em>was</em> listening. I was listening so hard I was already constructing a 5-step exit strategy for your job. I wanted to be your hero. I wanted to fix the leak in the boat.</p><p>To me, sitting there and just nodding while you suffer feels like negligence. It feels like watching a car crash and refusing to call an ambulance. Why would I just hold your hand when I have the tool to stop the bleeding?</p>"
+  },
+  "feeler": {
+    "title": "The Keeper of the Vibe",
+    "subtitle": "Why I needed a hug, not a lecture.",
+    "color": "rose",
+    "content": "<p>I didn't come home for a career consultant. I came home for my partner.</p><p>The moment I started speaking, I saw your eyes glaze over. You weren't hearing <em>me</em>; you were scanning for data points. You were waiting for a pause so you could insert your flowchart.</p><p>\"Did you send the email?\" you interrupted. In that moment, I felt so small. It wasn't about the email. It was about the disrespect. It was about the feeling of being trapped.</p><p>When you offer solutions before I've even finished the sentence, you aren't being helpful. You're being dismissive. You're telling me, <em>\"Your emotions are a problem, and I need to solve them so you'll stop making that noise.\"</em></p><p>I don't need you to fix the leak right now. I need you to acknowledge that I'm wet. I need to know that if the boat sinks, you're holding my hand, not grading my swimming technique.</p>"
+  },
+  "bridge": {
+    "prompt": "There are two sides to every story.",
+    "cta": "Flip the Narrative"
+  }
+}

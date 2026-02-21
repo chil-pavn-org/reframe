@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Lora', serif;
+}
+
+/* Prose-like styling for article content */
+.article-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.85;
+  font-size: 1.125rem;
+}
+
+.article-content em {
+  font-style: italic;
+}
+
+.article-content p:first-of-type::first-letter {
+  float: left;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 0.75rem;
+  margin-top: 0.125rem;
+}
+
+/* Animation utilities */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out both;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out both;
+}

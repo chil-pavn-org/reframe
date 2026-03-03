@@ -8,10 +8,10 @@ const allFiles = import.meta.glob('@content/scenarios/*/*.json', { eager: true }
  * Get the catalog of all scenarios (for the homepage)
  */
 export function getScenarioCatalog() {
-  return Object.entries(metaFiles).map(([path, mod]) => {
-    const meta = mod.default || mod;
-    return meta;
-  }).sort((a, b) => new Date(b.date) - new Date(a.date));
+  return Object.entries(metaFiles)
+    .map(([path, mod]) => mod.default || mod)
+    .filter((meta) => meta.published !== false)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 /**

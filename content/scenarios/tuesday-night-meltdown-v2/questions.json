@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "question": "The world is ending in 48 hours. One person can stop it. Who do you actually trust with that call?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dr. House. He'll be right and rude about it.",
+        "sub": "Feelings are a distraction. Results are the point.",
+        "type": "fixer"
+      },
+      {
+        "id": "B",
+        "text": "Ted Lasso. He'll get everyone in the room.",
+        "sub": "You can't save the world if no one believes in you.",
+        "type": "feeler"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Your partner walks in the door visibly wrecked. Before they say a word, you:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Run a quick mental timeline of their day.",
+        "sub": "If I can figure out what happened, I can help faster.",
+        "type": "fixer"
+      },
+      {
+        "id": "B",
+        "text": "Put your phone down and wait.",
+        "sub": "They'll tell me when they're ready. My job is to be here.",
+        "type": "feeler"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Your best friend sends you the first draft of their business plan. There's a fatal flaw. You:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tell them. Clearly. Now.",
+        "sub": "If I don't say it, who will? That's what real love looks like.",
+        "type": "fixer"
+      },
+      {
+        "id": "B",
+        "text": "Ask what kind of feedback they need.",
+        "sub": "Support and honesty aren't the same thing. I need to know which one I'm being asked for.",
+        "type": "feeler"
+      }
+    ]
+  }
+]

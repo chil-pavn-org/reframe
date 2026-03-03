@@ -1,0 +1,23 @@
+{
+  "headline": "We see you. Both of you.",
+  "types": {
+    "fixer": {
+      "label": "The Fixer"
+    },
+    "feeler": {
+      "label": "The Feeler"
+    }
+  },
+  "options": {
+    "mirror": {
+      "title": "Mirror",
+      "description": "Read your own side first — the one that already knows it's right.",
+      "footer": "Recommended for comfort"
+    },
+    "window": {
+      "title": "Window",
+      "description": "Read the other side first — the one you've been arguing with.",
+      "footer": "Recommended for growth"
+    }
+  }
+}

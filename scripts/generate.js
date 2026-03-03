@@ -15,6 +15,7 @@ const ADAPTERS = {
   openai: () => import('./adapters/openai.js').then(m => new m.OpenAIAdapter()),
   gemini: () => import('./adapters/gemini.js').then(m => new m.GeminiAdapter()),
   claude: () => import('./adapters/claude.js').then(m => new m.ClaudeAdapter()),
+  'claude-cli': () => import('./adapters/claude-cli.js').then(m => new m.ClaudeCLIAdapter()),
 };
 
 // --- CLI args ---
@@ -22,14 +23,14 @@ const { values } = parseArgs({
   options: {
     type: { type: 'string', short: 't' },
     topic: { type: 'string' },
-    adapter: { type: 'string', short: 'a', default: 'openai' },
+    adapter: { type: 'string', short: 'a', default: 'claude-cli' },
     slug: { type: 'string', short: 's' },
     dry: { type: 'boolean', default: false },
   },
 });
 
 if (!values.type || !values.topic) {
-  console.error('Usage: node generate.js --type <interactive|story> --topic "Your topic" [--adapter openai|gemini|claude] [--slug custom-slug] [--dry]');
+  console.error('Usage: node generate.js --type <interactive|story> --topic "Your topic" [--adapter claude-cli|openai|gemini|claude] [--slug custom-slug] [--dry]');
   process.exit(1);
 }
 

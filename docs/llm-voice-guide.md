@@ -205,6 +205,9 @@ The examples in their raw message are the story. Your job is to sculpt, not repl
 After reading the raw input, decide:
 
 ```
+Is the topic a sensitive/complex societal, cultural, or geopolitical dynamic?
+  → YES: Fable format (animal characters, abstracted dynamics, ends with a question)
+
 Is there a two-sided conflict where both sides are valid?
   → YES: Interactive format (dual perspective + quiz)
   → NO: Story format (parable/narrative)
@@ -332,8 +335,27 @@ The writing consistently orbits these tensions:
 - **Agency vs. Efficiency** (doer who takes over vs. collaborator who wanted to try)
 - **Carrying vs. Letting Go** (memory vs. weight, processing vs. hoarding)
 - **Hero vs. Team** (individual brilliance vs. collective trust)
+- **Power vs. Survival** (societal/geopolitical dynamics where positions are shaped by context)
+- **Tradition vs. Progress** (cultural shifts, generational value clashes)
 
 When a new user message arrives, first map it to one of these existing tensions (or identify a new one and add it here).
+
+---
+
+## Part 5.5: Editorial Stance on Sensitive & Complex Topics
+
+> **Illuminate perspectives. Don't arbitrate morality.**
+
+When tackling societal dynamics, geopolitical situations, cultural tensions, or any topic where "sides" exist:
+
+1. **Present what each side experiences and believes** from inside their position. Not as a debate. As lived reality.
+2. **Never declare right or wrong.** Rights and wrongs depend on the moral consciousness of the person reading. This platform is not a courtroom.
+3. **Avoid false equivalence.** Presenting both sides does not mean both sides carry equal weight in every dimension. A colonial subject and a colonizer both have perspectives. Presenting both doesn't mean equating them. It means the reader sees the full picture and decides.
+4. **The fable format is the primary vehicle for sensitive topics.** Animal/cartoon characters create natural abstraction. The reader engages with the dynamic, not the identity. Defenses stay low. Insight lands.
+5. **No controversy-seeking.** The goal is understanding, not provocation. If a framing feels inflammatory, step back and find the human dynamic underneath the political label.
+6. **Open to correction.** The writing should never project certainty about complex topics. If something is wrong, the stance is: "Show me. I want to see what I missed."
+
+**The formula:** Take a complex real-world dynamic. Abstract it into animal characters. Let the characters live the tension. End with a question, not an answer. The reader's moral compass does the rest.
 
 ---
 

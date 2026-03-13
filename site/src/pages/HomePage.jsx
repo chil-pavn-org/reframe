@@ -6,6 +6,7 @@ import { getScenarioCatalog } from '../lib/loadScenarios';
 const TYPE_BADGES = {
   interactive: { label: 'Interactive', icon: MessageSquare, color: 'bg-blue-50 text-blue-700' },
   story: { label: 'Story', icon: BookOpen, color: 'bg-amber-50 text-amber-700' },
+  fable: { label: 'Fable', icon: BookOpen, color: 'bg-emerald-50 text-emerald-700' },
 };
 
 export default function HomePage() {

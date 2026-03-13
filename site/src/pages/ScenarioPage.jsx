@@ -4,10 +4,12 @@ import { ArrowLeft } from 'lucide-react';
 import { getScenarioBySlug } from '../lib/loadScenarios';
 import InteractiveRenderer from '../renderers/InteractiveRenderer';
 import StoryRenderer from '../renderers/StoryRenderer';
+import FableRenderer from '../renderers/FableRenderer';
 
 const RENDERERS = {
   interactive: InteractiveRenderer,
   story: StoryRenderer,
+  fable: FableRenderer,
 };
 
 export default function ScenarioPage() {

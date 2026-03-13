@@ -26,5 +26,8 @@
   ],
   "slug": "the-watering-hole",
   "type": "fable",
-  "date": "2026-03-13"
+  "date": "2026-03-13",
+  "video": {
+    "reel": "/videos/the-watering-hole-reel.mp4"
+  }
 }

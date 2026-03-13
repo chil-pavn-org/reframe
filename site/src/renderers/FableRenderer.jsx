@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { Play, Pause, Maximize2, Film } from 'lucide-react';
 
 const CHARACTER_COLORS = [
   { bg: 'bg-emerald-50', border: 'border-emerald-200', name: 'text-emerald-700', accent: 'bg-emerald-600' },
@@ -27,11 +28,79 @@ function DialogueBubble({ line, character, color, isRight }) {
   );
 }
 
+function VideoPlayer({ src }) {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showControls, setShowControls] = useState(true);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  const toggleFullscreen = () => {
+    if (!videoRef.current) return;
+    if (videoRef.current.requestFullscreen) {
+      videoRef.current.requestFullscreen();
+    } else if (videoRef.current.webkitRequestFullscreen) {
+      videoRef.current.webkitRequestFullscreen();
+    }
+  };
+
+  return (
+    <div
+      className="relative mx-auto rounded-2xl overflow-hidden shadow-xl bg-slate-900 cursor-pointer group"
+      style={{ maxWidth: 400, aspectRatio: '9/16' }}
+      onClick={togglePlay}
+      onMouseEnter={() => setShowControls(true)}
+      onMouseLeave={() => setShowControls(!isPlaying)}
+    >
+      <video
+        ref={videoRef}
+        src={src}
+        className="w-full h-full object-cover"
+        playsInline
+        onEnded={() => setIsPlaying(false)}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      />
+      <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${isPlaying && !showControls ? 'opacity-0' : 'opacity-100'}`}>
+        {!isPlaying && (
+          <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+            <Play className="w-7 h-7 text-slate-900 ml-1" />
+          </div>
+        )}
+      </div>
+      <div className={`absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-between transition-opacity duration-300 ${isPlaying && !showControls ? 'opacity-0' : 'opacity-100'}`}>
+        <button
+          onClick={(e) => { e.stopPropagation(); togglePlay(); }}
+          className="text-white hover:text-slate-200 transition-colors"
+        >
+          {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+        </button>
+        <button
+          onClick={(e) => { e.stopPropagation(); toggleFullscreen(); }}
+          className="text-white hover:text-slate-200 transition-colors"
+        >
+          <Maximize2 className="w-5 h-5" />
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function FableRenderer({ data }) {
   const { meta, content } = data;
   const [revealedSubtexts, setRevealedSubtexts] = useState({});
+  const [showVideo, setShowVideo] = useState(false);
 
   const allCharacters = (meta.characters || []).map(c => c.name);
+  const reelSrc = meta.video?.reel;
 
   const toggleSubtext = (index) => {
     setRevealedSubtexts(prev => ({ ...prev, [index]: !prev[index] }));
@@ -60,6 +129,31 @@ export default function FableRenderer({ data }) {
           )}
         </div>
       </div>
+
+      {/* Video toggle */}
+      {reelSrc && (
+        <div className="text-center mb-12">
+          {!showVideo ? (
+            <button
+              onClick={() => setShowVideo(true)}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg transition-all duration-200"
+            >
+              <Film className="w-4 h-4" />
+              Watch the Reel
+            </button>
+          ) : (
+            <div className="animate-fade-in">
+              <VideoPlayer src={reelSrc} />
+              <button
+                onClick={() => setShowVideo(false)}
+                className="mt-4 text-xs font-medium text-slate-400 hover:text-slate-600 transition-colors uppercase tracking-wider"
+              >
+                Hide video
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Characters */}
       {meta.characters?.length > 0 && (

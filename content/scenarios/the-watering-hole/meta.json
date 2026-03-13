@@ -1,0 +1,30 @@
+{
+  "title": "The Watering Hole",
+  "subtitle": "Who owns the water when the river runs through everyone's land?",
+  "tags": [
+    "power dynamics",
+    "resources",
+    "fairness",
+    "fable"
+  ],
+  "characters": [
+    {
+      "name": "Tam",
+      "species": "cat",
+      "archetype": "the gatekeeper"
+    },
+    {
+      "name": "Jarri",
+      "species": "mouse",
+      "archetype": "the survivor"
+    },
+    {
+      "name": "Kova",
+      "species": "crow",
+      "archetype": "the observer"
+    }
+  ],
+  "slug": "the-watering-hole",
+  "type": "fable",
+  "date": "2026-03-13"
+}

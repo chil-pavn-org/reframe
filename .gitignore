@@ -4,3 +4,5 @@ dist/
 .netlify/
 *.log
 .DS_Store
+learnings.md
+content/scenarios/.*/

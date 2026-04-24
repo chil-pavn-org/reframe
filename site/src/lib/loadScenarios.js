@@ -10,7 +10,11 @@ const allFiles = import.meta.glob('@content/scenarios/*/*.json', { eager: true }
 export function getScenarioCatalog() {
   return Object.entries(metaFiles)
     .map(([path, mod]) => mod.default || mod)
-    .filter((meta) => meta.published !== false)
+    .filter((meta) => {
+      // Explicitly check for false (boolean or string)
+      const isPublished = meta.published !== false && meta.published !== 'false';
+      return isPublished;
+    })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 

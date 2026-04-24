@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sequence } from 'remotion';
+// TODO: Video generation needs more comic characters involved rather than text-heavy scenes.
 import { TitleCard } from './sequences/TitleCard';
 import { SetupScene } from './sequences/SetupScene';
 import { DialogueScene } from './sequences/DialogueScene';

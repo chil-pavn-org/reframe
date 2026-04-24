@@ -30,7 +30,7 @@ const { values } = parseArgs({
 });
 
 if (!values.type || !values.topic) {
-  console.error('Usage: node generate.js --type <interactive|story> --topic "Your topic" [--adapter claude-cli|openai|gemini|claude] [--slug custom-slug] [--dry]');
+  console.error('Usage: node generate.js --type <interactive|story|fable> --topic "Your topic" [--adapter claude-cli|openai|gemini|claude] [--slug custom-slug] [--dry]');
   process.exit(1);
 }
 
@@ -54,8 +54,8 @@ async function main() {
   const { type, topic, adapter: adapterName, slug: customSlug, dry } = values;
 
   // Validate type
-  if (!['interactive', 'story'].includes(type)) {
-    console.error(`Unknown type: "${type}". Must be "interactive" or "story".`);
+  if (!['interactive', 'story', 'fable'].includes(type)) {
+    console.error(`Unknown type: "${type}". Must be "interactive", "story", or "fable".`);
     process.exit(1);
   }
 
@@ -97,7 +97,6 @@ async function main() {
   fs.mkdirSync(scenarioDir, { recursive: true });
 
   if (type === 'interactive') {
-    // Expect: { meta, questions, router, perspectives }
     const meta = { ...generated.meta, slug, type: 'interactive', date: new Date().toISOString().split('T')[0] };
     fs.writeFileSync(path.join(scenarioDir, 'meta.json'), JSON.stringify(meta, null, 2));
     fs.writeFileSync(path.join(scenarioDir, 'questions.json'), JSON.stringify(generated.questions, null, 2));
@@ -105,8 +104,18 @@ async function main() {
     fs.writeFileSync(path.join(scenarioDir, 'perspectives.json'), JSON.stringify(generated.perspectives, null, 2));
     console.log(`✅ Written interactive scenario to: content/scenarios/${slug}/`);
     console.log(`   - meta.json, questions.json, router.json, perspectives.json`);
+  } else if (type === 'fable') {
+    const meta = { ...generated.meta, slug, type: 'fable', date: new Date().toISOString().split('T')[0] };
+    fs.writeFileSync(path.join(scenarioDir, 'meta.json'), JSON.stringify(meta, null, 2));
+    fs.writeFileSync(path.join(scenarioDir, 'content.json'), JSON.stringify({
+      setup: generated.setup,
+      scenes: generated.scenes,
+      twist: generated.twist,
+      moral_question: generated.moral_question,
+    }, null, 2));
+    console.log(`✅ Written fable scenario to: content/scenarios/${slug}/`);
+    console.log(`   - meta.json, content.json`);
   } else {
-    // Expect: { meta, content }
     const meta = { ...generated.meta, slug, type: 'story', date: new Date().toISOString().split('T')[0] };
     fs.writeFileSync(path.join(scenarioDir, 'meta.json'), JSON.stringify(meta, null, 2));
     fs.writeFileSync(path.join(scenarioDir, 'content.json'), JSON.stringify(generated.content, null, 2));

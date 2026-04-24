@@ -1,17 +1,19 @@
 # Reframe
 
-A multi-format blog platform that turns topics into styled blog posts using LLMs. Posts come in two formats: **story** (narrative parables) and **interactive** (dual-perspective explorations with personality quizzes).
+A multi-format blog platform that turns topics into styled blog posts using LLMs. Posts come in three formats: **story** (narrative parables), **interactive** (dual-perspective explorations with personality quizzes), and **fable** (Panchatantra-inspired animal fables for complex/sensitive topics).
 
 ## Project Structure
 
 ```
 content/
-  templates/       # LLM prompt templates (story-prompt.md, interactive-prompt.md)
+  templates/       # LLM prompt templates (story, interactive, fable)
   scenarios/       # Generated blog post data (JSON per scenario)
 scripts/
   generate.js      # CLI tool to generate new posts via LLM
+  render-video.js  # CLI tool to render fables as MP4 video
   adapters/        # LLM provider adapters (claude-cli, claude, openai, gemini)
 site/              # React + Vite frontend (Tailwind CSS v4)
+video/             # Remotion video pipeline (renders fables as reels/full videos)
 docs/              # Voice guide and style documentation
 ```
 
@@ -58,13 +60,16 @@ node scripts/generate.js --type story --topic "Your topic here"
 
 # Interactive format (dual-perspective + quiz)
 node scripts/generate.js --type interactive --topic "Your topic here"
+
+# Fable format (animal characters, complex dynamics)
+node scripts/generate.js --type fable --topic "Your topic here"
 ```
 
 ### Options
 
 | Flag | Short | Description |
 |------|-------|-------------|
-| `--type` | `-t` | Post format: `story` or `interactive` (required) |
+| `--type` | `-t` | Post format: `story`, `interactive`, or `fable` (required) |
 | `--topic` | | The topic to write about (required) |
 | `--adapter` | `-a` | LLM provider: `claude-cli` (default), `openai`, `gemini`, `claude` |
 | `--slug` | `-s` | Custom URL slug (auto-generated from title if omitted) |
@@ -83,6 +88,26 @@ Generated content is written to `content/scenarios/<slug>/` as JSON files:
 
 - **Story**: `meta.json`, `content.json`
 - **Interactive**: `meta.json`, `questions.json`, `router.json`, `perspectives.json`
+- **Fable**: `meta.json`, `content.json` (with characters, scenes, twist, moral_question)
+
+## Video Rendering (Fables)
+
+Fables can be rendered as MP4 videos using Remotion.
+
+```sh
+cd video && npm install
+
+# Render as a reel (1080x1920, vertical)
+node scripts/render-video.js --slug the-watering-hole --format reel
+
+# Render as full video (1920x1080, horizontal)
+node scripts/render-video.js --slug the-watering-hole --format full
+
+# Preview in Remotion Studio
+cd video && npm run dev
+```
+
+Output goes to `video/out/`.
 
 ## Deployment
 
@@ -91,5 +116,6 @@ Configured for Netlify. The `netlify.toml` builds from `site/` and publishes `di
 ## Tech Stack
 
 - **Frontend**: React 19, React Router 7, Tailwind CSS 4, Vite 7
+- **Video**: Remotion 4 (React-based programmatic video rendering)
 - **Content generation**: Node.js CLI with pluggable LLM adapters
 - **Deployment**: Netlify

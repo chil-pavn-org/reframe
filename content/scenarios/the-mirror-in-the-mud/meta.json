@@ -1,0 +1,33 @@
+{
+  "title": "The Mirror in the Mud",
+  "subtitle": "Is a friend a companion for the flight, or just a mirror for their own shadows?",
+  "tags": [
+    "friendship",
+    "betrayal",
+    "perspective",
+    "fable"
+  ],
+  "characters": [
+    {
+      "name": "Kalu",
+      "species": "crow",
+      "archetype": "the loyal flyer",
+      "description": "A creature of the open sky who believes that long summers of shared flight earn a lifetime of trust."
+    },
+    {
+      "name": "Chama",
+      "species": "jackal",
+      "archetype": "the wounded mirror",
+      "description": "A ground-dweller haunted by his own past, who projects his own shadows onto those closest to him."
+    },
+    {
+      "name": "Damini",
+      "species": "fox",
+      "archetype": "the storm-bringer",
+      "description": "A cunning spirit who knows that the easiest way to break a bond is to whisper a lie that sounds like an old memory."
+    }
+  ],
+  "slug": "the-mirror-in-the-mud",
+  "type": "fable",
+  "date": "2026-04-26"
+}

@@ -1,0 +1,54 @@
+{
+  "setup": "<p>For three summers, Kalu the Crow and Chama the Jackal were the talk of the Banyan Grove. They weren't just neighbors; they were the kind of friends who shared the weight of the world. One flew high to spot the ripening fruit, the other guarded the roots. They shared every scrap, every secret, and every silence.</p>",
+  "scenes": [
+    {
+      "characters": ["Kalu", "Chama"],
+      "dialogue": [
+        { "character": "Kalu", "line": "When I build my great nest for the monsoon mating, Chama, you must be the one to stand at the base. I want you to be the witness to my life." },
+        { "character": "Chama", "line": "I will be there. We are two bodies with one heartbeat. I have never known a bird who understood my silence as you do." }
+      ],
+      "action": "<p>They sit by the edge of the high cliff, watching the sun dip. Kalu drops a polished river stone into Chama’s paws, a token of eternal brotherhood. Chama tucks it into his fur, his tail wagging with a ferocity that felt like truth.</p>",
+      "subtext": "Establishing the 'best man' level of trust and mutual understanding."
+    },
+    {
+      "characters": ["Kalu", "Damini"],
+      "dialogue": [
+        { "character": "Damini", "line": "You fly too high, Kalu. You think the sky belongs to you, but you're just a speck of soot in the wind. This flight is over." },
+        { "character": "Kalu", "line": "I only wanted us to see the sunrise together, Damini. Why must you turn the light into a fire?" }
+      ],
+      "action": "<p>The Great Storm breaks. Kalu and Damini, who had shared the same branch for a season, part ways with a gust of jagged words. Damini retreats into the tall grass, her eyes gleaming with a new, cold intent. The breakup is messy, a charade of false reasons that leaves Kalu's wings trembling.</p>",
+      "subtext": "The breakup, which is messy and full of lies from the partner's side."
+    },
+    {
+      "characters": ["Chama", "Damini"],
+      "dialogue": [
+        { "character": "Damini", "line": "He is not the noble bird you think, Chama. He is the kind who leaves when the wind turns. He is just like the ones who hurt you in the old forest." },
+        { "character": "Chama", "line": "I... I knew it. I always said I was mean, and now I see he is the same. He is playing the same games I once played." }
+      ],
+      "action": "<p>Damini whispers into Chama's ear by the muddy riverbank. She doesn't need to invent much; she only needs to point at Chama's own old scars. Chama stares at his reflection in the silt, seeing his own past sins mirrored in his friend's face.</p>",
+      "subtext": "The friend projecting their own past trauma and 'mean' identity onto the protagonist."
+    },
+    {
+      "characters": ["Kalu", "Chama"],
+      "dialogue": [
+        { "character": "Kalu", "line": "Chama, she is telling the grove things that aren't true. Please, just look at the sky with me. You know me." },
+        { "character": "Chama", "line": "I don't need to look at the sky. I've heard enough from the grass. You're mean, Kalu. You're the bad one here. I know your type because I am your type." }
+      ],
+      "action": "<p>Kalu lands on the low branch, desperate for a moment of truth. He tries to show Chama the inconsistencies in Damini's story, but Chama turns his back. The jackal is no longer listening to his friend; he is listening to the echoes of his own failures.</p>",
+      "subtext": "The refusal to verify the truth or even listen to the friend's side."
+    },
+    {
+      "characters": ["Kalu", "Chama"],
+      "dialogue": [
+        { "character": "Kalu", "line": "You would believe a stranger's lies over three summers of our truth? After everything we shared?" },
+        { "character": "Chama", "line": "Lies are easier to believe when they fit the story I already know about the world. Goodbye, Kalu." }
+      ],
+      "action": "<p>Chama walks away into the shadows, the river stone Kalu gave him falling from his fur and sinking into the mud. Kalu watches from the branch, realizing the betrayal wasn't about the lies Damini told, but the truth Chama was too afraid to see in himself.</p>",
+      "subtext": "The finality of the betrayal based on the friend's own internal narrative."
+    }
+  ],
+  "twist": {
+    "content": "<p>Kalu realized then that Chama wasn't looking at him at all. He was looking at the mud. Chama had spent so long telling everyone he was 'the mean one' that he could no longer recognize goodness when it sat right in front of him. He needed Kalu to be the villain so he didn't have to feel like the only one. The friendship hadn't died because of a breakup; it had died because Chama preferred his own dark script to the light of the truth.</p>"
+  },
+  "moral_question": "When someone chooses to believe a lie because it fits their own inner darkness, are they really betraying you, or are they just finally showing you who they’ve always been?"
+}

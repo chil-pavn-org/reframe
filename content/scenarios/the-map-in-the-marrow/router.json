@@ -1,0 +1,19 @@
+{
+  "headline": "The hammer has hit the iron. We see your shape.",
+  "types": {
+    "sentinel": { "label": "The Sentinel of the Hearth" },
+    "reformer": { "label": "The Architect of the Whole" }
+  },
+  "options": {
+    "mirror": {
+      "title": "The Mirror",
+      "description": "See why your drive for security isn't selfishness. It's survival memory.",
+      "footer": "Recommended for clarity"
+    },
+    "window": {
+      "title": "The Window",
+      "description": "Understand the logic of a mind that never had to fear the bottom.",
+      "footer": "Recommended for empathy"
+    }
+  }
+}

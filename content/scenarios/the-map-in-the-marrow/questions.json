@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "question": "The city is falling. Two heroes arrive at the gate. Who do you trust to lead the rebuild?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Strategist",
+        "sub": "Efficiency first; survival is the only metric.",
+        "type": "sentinel"
+      },
+      {
+        "id": "B",
+        "text": "The Idealist",
+        "sub": "We don't just survive; we rebuild it right.",
+        "type": "reformer"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "A friend is struggling with mounting debt. Your first instinct is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calculate the math",
+        "sub": "Money is a lever; we need to find the floor.",
+        "type": "sentinel"
+      },
+      {
+        "id": "B",
+        "text": "Challenge the system",
+        "sub": "Why is the interest rate so predatory?",
+        "type": "reformer"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "The world is ending. Who do you trust to save it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sherlock Holmes",
+        "sub": "Logic-first, brutal competence.",
+        "type": "sentinel"
+      },
+      {
+        "id": "B",
+        "text": "Captain America",
+        "sub": "Heart-first, team-first.",
+        "type": "reformer"
+      }
+    ]
+  }
+]

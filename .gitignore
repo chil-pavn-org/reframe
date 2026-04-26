@@ -7,3 +7,6 @@ dist/
 video/out/
 learnings.md
 content/scenarios/.*/
+.cursorindexingignore
+*specstory*
+.vscode/

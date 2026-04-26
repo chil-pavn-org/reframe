@@ -1,0 +1,19 @@
+{
+  "sentinel": {
+    "title": "The Sentinel of the Hearth",
+    "subtitle": "I am not being selfish; I am ensuring the floor doesn't drop again.",
+    "color": "blue",
+    "content": "<p>I grew up in a house where money wasn't a number; it was a temperature. If it was low, the air felt thin, the light bulbs seemed dimmer, and the adults grew sharp and brittle. I learned early that the world doesn't owe you a cushion. <em>If I don't build the wall today, who will be there to catch us when the wind changes?</em> My childhood taught me that life is a series of exit signs you have to keep in your peripheral vision at all times.</p><p>When my friend talks about eradicating systemic evils like caste, I feel a strange, hollow guilt that starts in my stomach and works its way up. I see the evil. I know it’s there. But my brain is an old machine, and it’s currently busy calculating the cost of my family’s healthcare, the interest on a future mortgage, and the stability of my next five years. 'I want to care,' I told her, 'but I can’t stop looking at the door.' It’s hard to join a march when you’re still checking the locks on your own home.</p><p>To me, happiness is a fragile, crystalline thing that must be guarded with everything I have. It feels like a luxury, almost a sin, to fight a battle that doesn't directly threaten my own table. My survival is not a given; it is a full-time job. <em>Is it cowardice to protect your own first?</em> Or is it just the only logic I was ever taught in the dark? I am not a fighter of systems; I am a guardian of a few precious lives, and right now, that is all the weight I can carry.</p>"
+  },
+  "reformer": {
+    "title": "The Architect of the Whole",
+    "subtitle": "I have the luxury of looking up, so I must look at everything.",
+    "color": "rose",
+    "content": "<p>I have had the privilege of never wondering if the floor would hold. My childhood was a series of open windows and long afternoons where the concept of 'not enough' was a story in a book, not a reality in the kitchen. Because I didn't have to spend every ounce of my energy building a foundation or bracing for impact, I had the bandwidth to look at the sky, and more importantly, the cracks in it. <em>If I don't use this vantage point to fix the machine, then my safety is just an island of greed.</em></p><p>I want to eradicate the discrimination I see because it’s the only work that feels big enough to justify the peace I was handed. When my friend talks about focusing on their own family first, I struggle to relate, and I hate myself for it. 'How can you worry about your garden when the forest is on fire?' I asked her. I didn't realize until later that for some, the garden was never a given. It was something they had to carve out of the stone with their bare hands.</p><p>My drive comes from a place of unburdened sight. I don't see exit signs; I see blueprints. I don't feel the need to shore up my home because the home has always stood, silent and sturdy, in the background of my life. <em>My fight isn't better than theirs; it’s just the product of a different peace.</em> I am trying to build a world where nobody has to be a sentinel anymore, but I keep forgetting that some people are still standing guard because they have to be.</p>"
+  },
+  "bridge": {
+    "prompt": "Two pieces of iron, two different fires. Neither chose the hammer.",
+    "subtitle": "You've traced one survival map. Are you ready to walk the other?",
+    "cta": "See the Other Forging"
+  }
+}

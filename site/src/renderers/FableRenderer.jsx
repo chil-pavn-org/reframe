@@ -161,9 +161,14 @@ export default function FableRenderer({ data }) {
           {meta.characters.map((char, i) => {
             const color = CHARACTER_COLORS[i % CHARACTER_COLORS.length];
             return (
-              <div key={char.name} className={`${color.bg} ${color.border} border rounded-xl px-4 py-3 text-center`}>
+              <div key={char.name} className={`${color.bg} ${color.border} border rounded-xl px-4 py-3 text-center max-w-[200px]`}>
                 <div className={`text-sm font-bold ${color.name}`}>{char.name}</div>
-                <div className="text-xs text-slate-500">{char.species} · {char.archetype}</div>
+                <div className="text-xs text-slate-500 mb-2">{char.species} · {char.archetype}</div>
+                {char.description && (
+                  <div className="text-[10px] leading-tight text-slate-400 italic mt-1 border-t border-slate-200 pt-2">
+                    {char.description}
+                  </div>
+                )}
               </div>
             );
           })}

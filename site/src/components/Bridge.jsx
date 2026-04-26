@@ -2,8 +2,8 @@ import React from 'react';
 import { RefreshCw } from 'lucide-react';
 
 export default function Bridge({ bridge, currentKey, onFlip }) {
-  const otherSide = currentKey === 'fixer' ? 'emotion' : 'logic';
-  const thisSide = currentKey === 'fixer' ? 'logic' : 'emotion';
+  const defaultSubtitle = "You've seen one forging. Are you ready to step into the other?";
+  const subtitle = bridge?.subtitle || defaultSubtitle;
 
   return (
     <div className="mt-20 pt-10 border-t border-slate-200">
@@ -13,7 +13,7 @@ export default function Bridge({ bridge, currentKey, onFlip }) {
             {bridge.prompt}
           </h3>
           <p className="text-slate-400 mb-8 max-w-md mx-auto">
-            You've seen the {thisSide}. Now, are you ready to understand the {otherSide}?
+            {subtitle}
           </p>
           <button
             onClick={onFlip}

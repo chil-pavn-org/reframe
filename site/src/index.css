@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -26,6 +28,7 @@ body {
   line-height: 1;
   margin-right: 0.75rem;
   margin-top: 0.125rem;
+  color: inherit;
 }
 
 /* Animation utilities */

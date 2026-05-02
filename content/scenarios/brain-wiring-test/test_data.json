@@ -1,0 +1,297 @@
+{
+    "title": "The Brain-Wiring Test",
+  
+    "introduction": "This test is designed to indicate the masculinity or femininity of your brain patterns. There are no right or wrong answers – the result is simply an indication of the probable level of male hormone your brain did, or did not, receive around six to eight weeks after your conception. This is reflected in your preference of values, behaviours, style, orientations and choices.",
+  
+    "instructions": "Circle the statement that is most likely to be true for you most of the time.",
+  
+    "questions": [
+      {
+        "id": 1,
+        "question": "When it comes to reading a map or street directory you:",
+        "options": {
+          "a": "have difficulty and often ask for help",
+          "b": "turn it round to face the direction you're going",
+          "c": "have no difficulty reading maps or street directories"
+        }
+      },
+      {
+        "id": 2,
+        "question": "You're cooking a complicated meal with the radio playing and a friend phones. Do you:",
+        "options": {
+          "a": "leave the radio on and continue cooking while talking on the phone",
+          "b": "turn the radio off, talk and keep cooking",
+          "c": "say you'll call them back as soon as you've finished cooking"
+        }
+      },
+      {
+        "id": 3,
+        "question": "Friends are coming to visit and ask for directions to your new house. Do you:",
+        "options": {
+          "a": "draw a map with clear directions and send it to them or get someone else to explain how to get there",
+          "b": "ask what landmarks they know then try to explain to them how to get there",
+          "c": "explain verbally how to get there: 'Take the M3 to Newcastle, turn off, turn left, go to the second traffic lights ...'"
+        }
+      },
+      {
+        "id": 4,
+        "question": "When explaining an idea or concept, are you more likely to:",
+        "options": {
+          "a": "use a pencil, paper and body language gestures",
+          "b": "explain it verbally using body language and gestures",
+          "c": "explain it verbally, being clear and concise"
+        }
+      },
+      {
+        "id": 5,
+        "question": "When coming home from a great movie, you prefer to:",
+        "options": {
+          "a": "picture scenes from the movie in your mind",
+          "b": "talk about the scenes and what was said",
+          "c": "quote mainly what was said in the movie"
+        }
+      },
+      {
+        "id": 6,
+        "question": "In a cinema, you usually prefer to sit:",
+        "options": {
+          "a": "on the right side",
+          "b": "anywhere",
+          "c": "on the left side"
+        }
+      },
+      {
+        "id": 7,
+        "question": "A friend has something mechanical that won't work. You would:",
+        "options": {
+          "a": "sympathise, and discuss how they feel about it",
+          "b": "recommend someone reliable who can fix it",
+          "c": "figure out how it works and attempt to fix it for them"
+        }
+      },
+      {
+        "id": 8,
+        "question": "You're in an unfamiliar place and someone asks you where North is. You:",
+        "options": {
+          "a": "confess you don't know",
+          "b": "guess where it is, after a bit of thought",
+          "c": "point towards North without difficulty"
+        }
+      },
+      {
+        "id": 9,
+        "question": "You've found a parking space but it's tight and you must reverse into it. You would:",
+        "options": {
+          "a": "rather try to find another space",
+          "b": "carefully attempt to back into it",
+          "c": "reverse into it without any difficulty"
+        }
+      },
+      {
+        "id": 10,
+        "question": "You are watching TV when the telephone rings. You would:",
+        "options": {
+          "a": "answer the phone with the TV on",
+          "b": "turn the TV down and then answer",
+          "c": "turn the TV off, tell others to be quiet and then answer"
+        }
+      },
+      {
+        "id": 11,
+        "question": "You've just heard a new song by your favourite artist. Usually you:",
+        "options": {
+          "a": "can sing some of the song afterwards without difficulty",
+          "b": "can sing some of it afterwards if it's a really simple song",
+          "c": "find it hard to remember how the song sounded but you might recall some of the words"
+        }
+      },
+      {
+        "id": 12,
+        "question": "You are best at predicting outcomes by:",
+        "options": {
+          "a": "using intuition",
+          "b": "making a decision based on both the available information and 'gut feeling'",
+          "c": "using facts, statistics and data"
+        }
+      },
+      {
+        "id": 13,
+        "question": "You've misplaced your keys. Would you:",
+        "options": {
+          "a": "do something else until the answer comes to you",
+          "b": "do something else, but keep trying to remember where you put them",
+          "c": "mentally retrace your steps until you remember where you left them"
+        }
+      },
+      {
+        "id": 14,
+        "question": "You're in a hotel room and you hear the distant sound of a siren. You:",
+        "options": {
+          "a": "couldn't identify where it's coming from",
+          "b": "could probably point to it if you concentrate",
+          "c": "could point straight to where it's coming from"
+        }
+      },
+      {
+        "id": 15,
+        "question": "You go to a social meeting and are introduced to seven or eight new people. Next day you:",
+        "options": {
+          "a": "can easily picture their faces",
+          "b": "would remember a few of their faces",
+          "c": "would be more likely to remember their names"
+        }
+      },
+      {
+        "id": 16,
+        "question": "You want to go to the country for your holiday but your partner wants to go to a beach resort. To convince them your idea is better, you:",
+        "options": {
+          "a": "tell them sweetly how you feel: you love the countryside and the kids and family always have fun there",
+          "b": "tell them if they go to the country you'll be grateful and will be happy to go to the beach next time",
+          "c": "use the facts: the country resort is closer, cheaper, and well-organised for sporting and leisure activities"
+        }
+      },
+      {
+        "id": 17,
+        "question": "When planning your day's activities, you usually:",
+        "options": {
+          "a": "write a list so you can see what needs to be done",
+          "b": "think of the things you need to do",
+          "c": "picture in your mind the people you will see, places you will visit and things you'll be doing"
+        }
+      },
+      {
+        "id": 18,
+        "question": "A friend has a personal problem and has come to discuss it with you. You:",
+        "options": {
+          "a": "are sympathetic and understanding",
+          "b": "say that problems are never as bad as they seem and explain why",
+          "c": "give suggestions or rational advice on how to solve the problem"
+        }
+      },
+      {
+        "id": 19,
+        "question": "Two friends from different marriages are having a secret affair. How likely are you to spot it?",
+        "options": {
+          "a": "you could spot it very early",
+          "b": "you'd pick up on it half the time",
+          "c": "you'd probably miss it"
+        }
+      },
+      {
+        "id": 20,
+        "question": "What is life all about, as you see it?",
+        "options": {
+          "a": "having friends and living in harmony with those around you",
+          "b": "being friendly to others while maintaining personal independence",
+          "c": "achieving worthwhile goals, earning others' respect and winning prestige and advancement"
+        }
+      },
+      {
+        "id": 21,
+        "question": "Given the choice, you would prefer to work:",
+        "options": {
+          "a": "in a team where people are compatible",
+          "b": "around others but maintaining your own space",
+          "c": "by yourself"
+        }
+      },
+      {
+        "id": 22,
+        "question": "The books you prefer to read are:",
+        "options": {
+          "a": "novels and fiction",
+          "b": "magazines and newspapers",
+          "c": "non-fiction, autobiographies"
+        }
+      },
+      {
+        "id": 23,
+        "question": "When you go shopping you tend to:",
+        "options": {
+          "a": "often buy on impulse, particularly the specials",
+          "b": "have a general plan but take it as it comes",
+          "c": "read the labels and compare costs"
+        }
+      },
+      {
+        "id": 24,
+        "question": "You prefer to go to bed, wake up and eat meals:",
+        "options": {
+          "a": "whenever you feel like it",
+          "b": "on a basic schedule but you are flexible",
+          "c": "at about the same time each day"
+        }
+      },
+      {
+        "id": 25,
+        "question": "You've started a new job and met lots of new people on the staff. One of them phones you when you are at home. You would:",
+        "options": {
+          "a": "find it easy to recognise their voice",
+          "b": "recognise it about half the time",
+          "c": "have difficulty identifying the voice"
+        }
+      },
+      {
+        "id": 26,
+        "question": "What upsets you most when arguing with someone?",
+        "options": {
+          "a": "their silence or lack of response",
+          "b": "when they won't see your point of view",
+          "c": "their probing or challenging questions and comments"
+        }
+      },
+      {
+        "id": 27,
+        "question": "In school how did you feel about spelling tests and writing essays?",
+        "options": {
+          "a": "you found them both fairly easy",
+          "b": "you were generally OK with one but not the other",
+          "c": "you weren't very good at either"
+        }
+      },
+      {
+        "id": 28,
+        "question": "When it comes to dancing or jazz routines, you:",
+        "options": {
+          "a": "can 'feel' the music once you've learnt the steps",
+          "b": "can do some exercises or dances, but get lost with others",
+          "c": "have difficulty keeping time or rhythm"
+        }
+      },
+      {
+        "id": 29,
+        "question": "How good are you at identifying and mimicking animal sounds?",
+        "options": {
+          "a": "not very good",
+          "b": "reasonable",
+          "c": "very good"
+        }
+      },
+      {
+        "id": 30,
+        "question": "At the end of a long day, you usually prefer to:",
+        "options": {
+          "a": "talk to friends or family about your day",
+          "b": "listen to others talk about their day",
+          "c": "read a paper, watch TV and not talk"
+        }
+      }
+    ],
+  
+    "scoring": {
+      "description": "First, add the number of A, B and C responses and use the following table to arrive at your final result.",
+      "male": {
+        "A": 10,
+        "B": 5,
+        "C": -5
+      },
+      "female": {
+        "A": 15,
+        "B": 5,
+        "C": -5
+      },
+      "note": "For any questions where the answers didn't accurately reflect your life or you left them blank, award yourself five points."
+    },
+  
+    "analysis": "Most males will score between 0–180 and most females 150–300. Brains that are 'wired' for mainly masculine thinking usually score below 150. The closer to 0 they are, the more masculine they are, and the higher their testosterone level is likely to be. These people demonstrate strong logical, analytical and verbal skills and tend to be disciplined and well-organised. The closer to 0 they score, the better they are at projecting costs and planning outcomes for statistical data, with their emotions hardly influencing them at all.\n\nScores in the minus range are high masculine scores. These scores show that large amounts of testosterone were present in the early stages of foetal development. The lower the score for a woman, the more likely she will be to have lesbian tendencies.\n\nBrains that are wired for mainly feminine thinking will score higher than 180. The higher the number, the more feminine the brain will be, and the more likely the person is to demonstrate significant creative, artistic and musical talents. They will make more of their decisions on intuition or gut feeling, and are good at recognising problems using minimal data. They are also good at solving problems using creativity and insight. The higher the score is above 180 for a man, the greater the chance he will be gay.\n\nMales who score below 0 and women who score above 300 have brains that are wired so oppositely that the only thing they are likely to have in common is that they live on the same planet!\n\nScores between 150–180 show compatibility of thought for both sexes, or a foot in both sexual camps. These people do not show a bias for either male or female thinking and usually demonstrate a flexibility in thinking that can be a significant advantage to any group who are going through a problem-solving process. They have the predisposition to make friends with both men and women."
+  }

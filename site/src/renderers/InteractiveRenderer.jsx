@@ -56,19 +56,19 @@ export default function InteractiveRenderer({ data }) {
       {/* INTRO */}
       {step === 'intro' && (
         <div className="text-center space-y-8 animate-fade-in-up">
-          <div className="inline-block px-3 py-1 bg-slate-100 text-slate-500 rounded-full text-xs font-medium tracking-wide uppercase mb-4">
+          <div className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 rounded-full text-xs font-medium tracking-wide uppercase mb-4">
             Interactive Story
           </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900">
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
             {meta.title}
           </h1>
-          <p className="text-xl text-slate-500 max-w-md mx-auto leading-relaxed">
+          <p className="text-xl text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
             {meta.subtitle}
           </p>
           <div className="pt-4">
             <button
               onClick={() => setStep('quiz')}
-              className="mx-auto px-6 py-3 rounded-lg font-medium bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2"
+              className="mx-auto px-6 py-3 rounded-lg font-medium bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white"
             >
               Begin Assessment <ArrowRight className="w-4 h-4" />
             </button>
@@ -85,10 +85,10 @@ export default function InteractiveRenderer({ data }) {
       {step === 'calculating' && (
         <div className="text-center space-y-6 animate-fade-in">
           <div className="relative w-16 h-16 mx-auto">
-            <div className="absolute inset-0 border-4 border-slate-100 rounded-full"></div>
-            <div className="absolute inset-0 border-4 border-slate-900 border-t-transparent rounded-full animate-spin"></div>
+            <div className="absolute inset-0 border-4 border-slate-100 dark:border-slate-800 rounded-full"></div>
+            <div className="absolute inset-0 border-4 border-slate-900 dark:border-slate-100 border-t-transparent rounded-full animate-spin"></div>
           </div>
-          <h3 className="text-xl font-medium text-slate-900">Analyzing your perspective...</h3>
+          <h3 className="text-xl font-medium text-slate-900 dark:text-slate-100">Analyzing your perspective...</h3>
         </div>
       )}
 

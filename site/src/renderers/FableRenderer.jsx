@@ -2,10 +2,10 @@ import React, { useState, useRef } from 'react';
 import { Play, Pause, Maximize2, Film } from 'lucide-react';
 
 const CHARACTER_COLORS = [
-  { bg: 'bg-emerald-50', border: 'border-emerald-200', name: 'text-emerald-700', accent: 'bg-emerald-600' },
-  { bg: 'bg-amber-50', border: 'border-amber-200', name: 'text-amber-700', accent: 'bg-amber-600' },
-  { bg: 'bg-violet-50', border: 'border-violet-200', name: 'text-violet-700', accent: 'bg-violet-600' },
-  { bg: 'bg-rose-50', border: 'border-rose-200', name: 'text-rose-700', accent: 'bg-rose-600' },
+  { bg: 'bg-emerald-50 dark:bg-emerald-950/40', border: 'border-emerald-200 dark:border-emerald-800', name: 'text-emerald-700 dark:text-emerald-300', accent: 'bg-emerald-600' },
+  { bg: 'bg-amber-50 dark:bg-amber-950/40', border: 'border-amber-200 dark:border-amber-800', name: 'text-amber-700 dark:text-amber-300', accent: 'bg-amber-600' },
+  { bg: 'bg-violet-50 dark:bg-violet-950/40', border: 'border-violet-200 dark:border-violet-800', name: 'text-violet-700 dark:text-violet-300', accent: 'bg-violet-600' },
+  { bg: 'bg-rose-50 dark:bg-rose-950/40', border: 'border-rose-200 dark:border-rose-800', name: 'text-rose-700 dark:text-rose-300', accent: 'bg-rose-600' },
 ];
 
 function getCharacterColor(name, allCharacters) {
@@ -20,7 +20,7 @@ function DialogueBubble({ line, character, color, isRight }) {
         <span className={`text-xs font-bold uppercase tracking-wider ${color.name} block mb-1`}>
           {character}
         </span>
-        <p className="font-serif text-slate-800 leading-relaxed text-base">
+        <p className="font-serif text-slate-800 dark:text-slate-200 leading-relaxed text-base">
           {line}
         </p>
       </div>
@@ -110,16 +110,16 @@ export default function FableRenderer({ data }) {
     <div className="animate-fade-in-up">
       {/* Header */}
       <div className="text-center mb-12">
-        <div className="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-medium tracking-wide uppercase mb-6">
+        <div className="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 rounded-full text-xs font-medium tracking-wide uppercase mb-6">
           Fable
         </div>
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-4">
           {meta.title}
         </h1>
-        <p className="text-xl text-slate-500 max-w-md mx-auto leading-relaxed">
+        <p className="text-xl text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
           {meta.subtitle}
         </p>
-        <div className="flex items-center justify-center gap-3 mt-6 text-sm text-slate-400">
+        <div className="flex items-center justify-center gap-3 mt-6 text-sm text-slate-400 dark:text-slate-500">
           <time>{new Date(meta.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
           {meta.tags?.length > 0 && (
             <>
@@ -136,7 +136,7 @@ export default function FableRenderer({ data }) {
           {!showVideo ? (
             <button
               onClick={() => setShowVideo(true)}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg transition-all duration-200"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg transition-all duration-200 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white"
             >
               <Film className="w-4 h-4" />
               Watch the Reel
@@ -146,7 +146,7 @@ export default function FableRenderer({ data }) {
               <VideoPlayer src={reelSrc} />
               <button
                 onClick={() => setShowVideo(false)}
-                className="mt-4 text-xs font-medium text-slate-400 hover:text-slate-600 transition-colors uppercase tracking-wider"
+                className="mt-4 text-xs font-medium text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors uppercase tracking-wider"
               >
                 Hide video
               </button>
@@ -163,9 +163,9 @@ export default function FableRenderer({ data }) {
             return (
               <div key={char.name} className={`${color.bg} ${color.border} border rounded-xl px-4 py-3 text-center max-w-[200px]`}>
                 <div className={`text-sm font-bold ${color.name}`}>{char.name}</div>
-                <div className="text-xs text-slate-500 mb-2">{char.species} · {char.archetype}</div>
+                <div className="text-xs text-slate-500 dark:text-slate-400 mb-2">{char.species} · {char.archetype}</div>
                 {char.description && (
-                  <div className="text-[10px] leading-tight text-slate-400 italic mt-1 border-t border-slate-200 pt-2">
+                  <div className="text-[10px] leading-tight text-slate-400 italic mt-1 border-t border-slate-200 dark:border-slate-700 pt-2">
                     {char.description}
                   </div>
                 )}
@@ -176,19 +176,19 @@ export default function FableRenderer({ data }) {
       )}
 
       {/* Setup */}
-      <div className="article-content font-serif max-w-prose mx-auto mb-12"
+      <div className="article-content font-serif max-w-prose mx-auto mb-12 text-slate-800 dark:text-slate-200"
         dangerouslySetInnerHTML={{ __html: content.setup }}
       />
 
       {/* Scenes */}
       {content.scenes.map((scene, i) => (
         <div key={i} className="my-12 max-w-prose mx-auto">
-          <span className="text-xs font-bold tracking-widest uppercase text-slate-400 mb-6 block text-center">
+          <span className="text-xs font-bold tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6 block text-center">
             Scene {i + 1}
           </span>
 
           {/* Action */}
-          <div className="article-content font-serif mb-6"
+          <div className="article-content font-serif mb-6 text-slate-800 dark:text-slate-200"
             dangerouslySetInnerHTML={{ __html: scene.action }}
           />
 
@@ -216,12 +216,12 @@ export default function FableRenderer({ data }) {
             <div className="text-center mt-4">
               <button
                 onClick={() => toggleSubtext(i)}
-                className="text-xs font-medium text-slate-400 hover:text-slate-600 transition-colors uppercase tracking-wider"
+                className="text-xs font-medium text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors uppercase tracking-wider"
               >
                 {revealedSubtexts[i] ? 'Hide subtext' : 'What is this really about?'}
               </button>
               {revealedSubtexts[i] && (
-                <p className="mt-3 text-sm text-slate-500 italic max-w-md mx-auto animate-fade-in">
+                <p className="mt-3 text-sm text-slate-500 dark:text-slate-400 italic max-w-md mx-auto animate-fade-in">
                   {scene.subtext}
                 </p>
               )}
@@ -232,8 +232,8 @@ export default function FableRenderer({ data }) {
 
       {/* Twist */}
       {content.twist && (
-        <div className="my-16 py-10 border-y border-slate-200">
-          <div className="font-serif text-xl leading-relaxed text-slate-700 max-w-prose mx-auto italic text-center"
+        <div className="my-16 py-10 border-y border-slate-200 dark:border-slate-800">
+          <div className="font-serif text-xl leading-relaxed text-slate-700 dark:text-slate-300 max-w-prose mx-auto italic text-center"
             dangerouslySetInnerHTML={{ __html: content.twist.content }}
           />
         </div>
@@ -241,7 +241,7 @@ export default function FableRenderer({ data }) {
 
       {/* Moral Question */}
       {content.moral_question && (
-        <div className="my-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12">
+        <div className="my-16 bg-slate-900 text-white dark:bg-slate-800 rounded-2xl p-8 md:p-12 ring-1 ring-white/10">
           <div className="max-w-prose mx-auto text-center">
             <span className="text-xs font-bold tracking-widest uppercase text-slate-400 block mb-4">
               The question

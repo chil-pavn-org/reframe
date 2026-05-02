@@ -6,8 +6,8 @@ export default function Bridge({ bridge, currentKey, onFlip }) {
   const subtitle = bridge?.subtitle || defaultSubtitle;
 
   return (
-    <div className="mt-20 pt-10 border-t border-slate-200">
-      <div className="bg-slate-900 rounded-2xl p-8 md:p-12 text-center text-white shadow-2xl relative overflow-hidden">
+    <div className="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800">
+      <div className="bg-slate-900 dark:bg-slate-800 rounded-2xl p-8 md:p-12 text-center text-white shadow-2xl relative overflow-hidden ring-1 ring-white/10">
         <div className="relative z-10">
           <h3 className="text-2xl font-bold mb-4">
             {bridge.prompt}

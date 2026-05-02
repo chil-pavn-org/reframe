@@ -5,11 +5,13 @@ import { getScenarioBySlug } from '../lib/loadScenarios';
 import InteractiveRenderer from '../renderers/InteractiveRenderer';
 import StoryRenderer from '../renderers/StoryRenderer';
 import FableRenderer from '../renderers/FableRenderer';
+import ScoredQuizRenderer from '../renderers/ScoredQuizRenderer';
 
 const RENDERERS = {
   interactive: InteractiveRenderer,
   story: StoryRenderer,
   fable: FableRenderer,
+  'scored-quiz': ScoredQuizRenderer,
 };
 
 export default function ScenarioPage() {
@@ -19,11 +21,11 @@ export default function ScenarioPage() {
   if (!scenario) {
     return (
       <div className="text-center py-20 animate-fade-in">
-        <h1 className="text-3xl font-bold text-slate-900 mb-4">Not Found</h1>
-        <p className="text-slate-500 mb-8">This story doesn't exist yet.</p>
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-4">Not Found</h1>
+        <p className="text-slate-500 dark:text-slate-400 mb-8">This story doesn't exist yet.</p>
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 font-medium"
+          className="inline-flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium"
         >
           <ArrowLeft className="w-4 h-4" /> Back to all stories
         </Link>
@@ -36,7 +38,7 @@ export default function ScenarioPage() {
   if (!Renderer) {
     return (
       <div className="text-center py-20">
-        <p className="text-slate-500">Unknown content type: {scenario.meta.type}</p>
+        <p className="text-slate-500 dark:text-slate-400">Unknown content type: {scenario.meta.type}</p>
       </div>
     );
   }
@@ -47,9 +49,9 @@ export default function ScenarioPage() {
       {scenario.meta.type !== 'interactive' && (
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-slate-400 hover:text-slate-900 font-medium text-sm mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 font-medium text-sm mb-8 transition-colors"
         >
-          <ArrowLeft className="w-4 h-4" /> All stories
+          <ArrowLeft className="w-4 h-4" /> Home
         </Link>
       )}
       <Renderer data={scenario} />

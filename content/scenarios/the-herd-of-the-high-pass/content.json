@@ -1,0 +1,38 @@
+{
+  "setup": "<p>The snow was belly-deep and the air was thin enough to break. Kahn, the lead yak, kept his eyes on the peak. Behind him, the caravan stretched like a frayed rope. The goal was the High Pass, but the mountain had other plans.</p>",
+  "scenes": [
+    {
+      "characters": ["Kahn", "Yaki"],
+      "action": "<p>Kahn stopped, his breath a cloud of frozen silver. At the very back, Yaki was stumbling, his legs shaking like dry reeds. Kahn looked at the sun. If they didn't reach the ledge by dusk, the frost would take them all.</p>",
+      "dialogue": [
+        { "character": "Kahn", "line": "We move as the wind moves, Yaki. The wind does not wait for the dust." },
+        { "character": "Yaki", "line": "Then I am dust, Kahn. Go. The herd must reach the top." }
+      ],
+      "subtext": "The tension between individual achievement (Capitalism) and the collective survival (Socialism)."
+    },
+    {
+      "characters": ["Kahn", "Zazu"],
+      "action": "<p>Zazu, the bird, landed on Kahn’s frozen horn. He looked back at the shivering Yaki and then up at Kahn’s narrowing eyes. Kahn began to walk, but his hooves were heavier than before.</p>",
+      "dialogue": [
+        { "character": "Zazu", "line": "If you reach the peak alone, Kahn, do you still lead a herd?" },
+        { "character": "Kahn", "line": "I lead the winners. The mountain selects the rest." },
+        { "character": "Zazu", "line": "The mountain selects nothing. You select who to leave in the cold." }
+      ],
+      "subtext": "The realization that a group's identity is defined by its inclusion, not its speed."
+    },
+    {
+      "characters": ["Zazu", "Yaki"],
+      "action": "<p>Zazu flew to the back. He found Yaki slumped in the snow. Zazu himself was exhausted, his wings heavy with ice, but he began to hop and scream with a sudden, manic energy.</p>",
+      "dialogue": [
+        { "character": "Zazu", "line": "Get up, you woolly mountain! I can see the green grass from here! It's just ten hops away!" },
+        { "character": "Yaki", "line": "You’re lying, bird. You can barely stay in the air." },
+        { "character": "Zazu", "line": "I'm not flying, I'm vibrating with excitement! If a tiny bird can dance in this wind, a giant like you can surely walk!" }
+      ],
+      "subtext": "Moralizing the demoralized through self-hype and performative courage."
+    }
+  ],
+  "twist": {
+    "content": "<p>Yaki stood. He didn't stand because he believed in the grass, but because he couldn't let the little bird dance alone in the storm. As Yaki moved, Kahn slowed down. For the first time, the lead yak matched the pace of the last. They reached the ledge as one. Kahn looked at his empty back and realized that the power of the peak was a burden, but the rhythm of the herd was a liberation.</p>"
+  },
+  "moral_question": "Is it better to reach the peak alone and be a king of silence, or to reach the ledge together and be a part of the noise?"
+}

@@ -10,10 +10,12 @@ const CHARACTER_COLORS = [
 
 function getCharacterColor(name, allCharacters) {
   const index = allCharacters.indexOf(name);
+  if (index === -1) return CHARACTER_COLORS[0];
   return CHARACTER_COLORS[index % CHARACTER_COLORS.length];
 }
 
 function DialogueBubble({ line, character, color, isRight }) {
+  if (!color) return null;
   return (
     <div className={`flex ${isRight ? 'justify-end' : 'justify-start'} mb-3`}>
       <div className={`max-w-[80%] ${color.bg} ${color.border} border rounded-2xl px-5 py-3 ${isRight ? 'rounded-br-sm' : 'rounded-bl-sm'}`}>
@@ -95,6 +97,14 @@ function VideoPlayer({ src }) {
 }
 
 export default function FableRenderer({ data }) {
+  if (!data || !data.meta || !data.content) {
+    return (
+      <div className="text-center py-20">
+        <p className="text-slate-500 dark:text-slate-400">Loading story data...</p>
+      </div>
+    );
+  }
+
   const { meta, content } = data;
   const [revealedSubtexts, setRevealedSubtexts] = useState({});
   const [showVideo, setShowVideo] = useState(false);
@@ -105,6 +115,7 @@ export default function FableRenderer({ data }) {
   const toggleSubtext = (index) => {
     setRevealedSubtexts(prev => ({ ...prev, [index]: !prev[index] }));
   };
+
 
   return (
     <div className="animate-fade-in-up">
@@ -181,7 +192,7 @@ export default function FableRenderer({ data }) {
       />
 
       {/* Scenes */}
-      {content.scenes.map((scene, i) => (
+      {content.scenes?.map((scene, i) => (
         <div key={i} className="my-12 max-w-prose mx-auto">
           <span className="text-xs font-bold tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6 block text-center">
             Scene {i + 1}
@@ -232,7 +243,7 @@ export default function FableRenderer({ data }) {
 
       {/* Twist */}
       {content.twist && (
-        <div className="my-16 py-10 border-y border-slate-200 dark:border-slate-800">
+        <div className="my-12 px-8 py-10 bg-white border border-slate-100 dark:bg-slate-900/50 dark:border-none rounded-3xl shadow-sm dark:shadow-none">
           <div className="font-serif text-xl leading-relaxed text-slate-700 dark:text-slate-300 max-w-prose mx-auto italic text-center"
             dangerouslySetInnerHTML={{ __html: content.twist.content }}
           />

@@ -1,0 +1,25 @@
+{
+  "slug": "the-herd-of-the-high-pass",
+  "title": "The Herd of the High Pass",
+  "subtitle": "A caravan of yaks discovers that the strongest heart isn't always at the front of the line.",
+  "type": "fable",
+  "date": "2026-05-07",
+  "tags": ["fable", "leadership", "collectivism", "growth"],
+  "characters": [
+    {
+      "name": "Kahn",
+      "species": "Great Mountain Yak",
+      "archetype": "The Driven Leader"
+    },
+    {
+      "name": "Yaki",
+      "species": "Young Yak",
+      "archetype": "The Slowest Link"
+    },
+    {
+      "name": "Zazu",
+      "species": "High-Altitude Chough (Bird)",
+      "archetype": "The Moralizing Hype-Man"
+    }
+  ]
+}

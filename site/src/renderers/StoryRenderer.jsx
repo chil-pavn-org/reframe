@@ -11,7 +11,7 @@ const SECTION_STYLES = {
     content: 'article-content font-serif max-w-prose mx-auto text-slate-800 dark:text-slate-200',
   },
   reflection: {
-    wrapper: 'my-16 py-10 border-y border-slate-200 dark:border-slate-800',
+    wrapper: 'my-12 px-8 py-10 bg-white border border-slate-100 dark:bg-slate-900/50 dark:border-none rounded-3xl shadow-sm dark:shadow-none',
     content: 'font-serif text-xl leading-relaxed text-slate-700 dark:text-slate-300 max-w-prose mx-auto italic text-center',
   },
   takeaway: {

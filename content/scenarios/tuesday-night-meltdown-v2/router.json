@@ -11,12 +11,12 @@
   "options": {
     "mirror": {
       "title": "Mirror",
-      "description": "Read your own side first — the one that already knows it's right.",
+      "description": "Read your own side first. The one that already knows it's right.",
       "footer": "Recommended for comfort"
     },
     "window": {
       "title": "Window",
-      "description": "Read the other side first — the one you've been arguing with.",
+      "description": "Read the other side first. The one you've been arguing with.",
       "footer": "Recommended for growth"
     }
   }

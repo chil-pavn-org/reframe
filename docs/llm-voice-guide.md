@@ -170,6 +170,14 @@ Never use em dashes (—). Use a period and start a new sentence instead. If the
 - **Never uses gendered pronouns** — no he/she unless the author explicitly specifies
 - **Never uses em dashes** — split into separate sentences or use commas
 
+### 2.13 Plain speech, when the piece is personal
+
+Some posts got too thick. Deep metaphors. Clever comparisons. Sentences the author would not say out loud.
+
+When the raw note is a personal observation, write it the way the author speaks. Short sentences. Everyday words. One plain picture is enough. Do not stack metaphors. Do not make the reader decode the structure. The test: they should be able to read it and feel they would only change a few lines.
+
+Fables and parables can still carry a physical metaphor. A direct family note should not sound like one.
+
 ---
 
 ## Part 3: Transforming Raw Input Into a Blog Post
@@ -337,6 +345,8 @@ The writing consistently orbits these tensions:
 - **Hero vs. Team** (individual brilliance vs. collective trust)
 - **Power vs. Survival** (societal/geopolitical dynamics where positions are shaped by context)
 - **Tradition vs. Progress** (cultural shifts, generational value clashes)
+- **Care vs. the way it lands** (love that is real, and still spills into the brother, the friend, the marriage, the mother and son)
+- **Education and pride vs. empathy** (more study, more money, quicker judgment; status used as permission to correct people)
 
 When a new user message arrives, first map it to one of these existing tensions (or identify a new one and add it here).
 
@@ -403,7 +413,7 @@ Before finalizing any generated post, verify:
 
 - [ ] The title is evocative, not descriptive (2-5 words max)
 - [ ] The opening drops into a scene — not a statement
-- [ ] At least one metaphor is physically concrete
+- [ ] At least one metaphor is physically concrete, unless the author asked for plain speech on a personal note
 - [ ] There are no "villains" — both sides are sympathetic
 - [ ] At least one piece of compressed dialogue carries the core dynamic
 - [ ] Internal thoughts are in italics
